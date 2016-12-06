@@ -1,0 +1,16 @@
+{
+    "indent": 4,
+    "white": true,
+    "undef": true,
+    "unused": true,
+    "-W058": true,
+    "-W014": true,
+    "expr": true,
+    "globals": {
+        "window": true,
+        "console": true,
+        "document": true,
+        "angular": true,
+        "alert": true,
+    }
+}
