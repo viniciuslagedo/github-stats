@@ -1,0 +1,11 @@
+{
+  "name": "mundipagg-github-stats",
+  "description": "Just a simple page with Mundipagg github stats",
+  "authors": [
+    "Vinícius Lagêdo <viniciuslagedo@gmail.com>"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.9"
+  }
+}
