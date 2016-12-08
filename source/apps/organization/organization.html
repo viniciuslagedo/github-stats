@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="header">
+        <img src="" alt="">
+        <h1>{{vm.organization.name}}</h1>
+        <h2>{{vm.organization.description}}</h2>
+        <ul>
+            <li><i></i> <span>{{vm.organization.location}}</span></li>
+            <li><i></i> <span><a ng-href="{{vm.organization.blog}}">{{vm.organization.blog}}</a></span></li>
+            <li><i></i> <span>{{vm.organization.email}}</span></li>
+        </ul>
+    </div>
+    <div class="content">
+        <p class="section-title">Repositórios</p>
+        <ul>
+            <li ng-repeat="repository in vm.repositories" ng-click="vm.goToDetails(repository.name)">
+                <p class="name">{{repository.name}}</p>
+                <p class="description">{{repository.description}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
