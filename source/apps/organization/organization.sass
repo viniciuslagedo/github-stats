@@ -1,0 +1,58 @@
+.home
+    .header
+        position: relative
+        width: 100%
+        height: auto
+        overflow: hidden
+        img
+            margin: 0 auto
+            display: block
+            max-width: 200px
+        ul
+            text-align: center
+            height: auto
+            overflow: hidden
+            display: block
+            margin-top: -35px
+            li
+                color: rgba(84,110,122,1)
+                padding-right: 25px
+                box-sizing: border-box
+                display: inline-block
+                font-size: 14px
+                font-weight: 200
+
+                a
+                    color: rgba(84,110,122,1)
+    .content
+        margin-top: 50px
+        li
+            float: left
+            width: 30%
+            margin: 0 1.5% 20px
+            height: 90px
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+            box-sizing: border-box
+            padding: 15px
+            cursor: pointer
+            border: 1px solid #e9e9e9
+            overflow: hidden
+            transform: perspective(1px) translateZ(0)
+            transition: transform 0.3s ease-out
+
+            &:hover
+                transform: translateY(-8px)
+
+            .name
+                margin: 0 0 15px
+                white-space: nowrap
+                font-size: 16px
+                color: rgba(21,101,192,1)
+                text-overflow: ellipsis
+                overflow: hidden
+
+            .description
+                color: #333
+                font-size: 13px
+                margin: 0
+

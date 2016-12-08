@@ -1,16 +1,22 @@
-<div class="container">
+<div class="container home">
     <div class="header">
-        <img src="" alt="">
-        <h1>{{vm.organization.name}}</h1>
-        <h2>{{vm.organization.description}}</h2>
+        <img ng-src="{{vm.organization.avatar_url}}" alt="">
         <ul>
-            <li><i></i> <span>{{vm.organization.location}}</span></li>
-            <li><i></i> <span><a ng-href="{{vm.organization.blog}}">{{vm.organization.blog}}</a></span></li>
-            <li><i></i> <span>{{vm.organization.email}}</span></li>
+            <li>
+                <i class="fa fa-map-marker"></i>
+                <span>{{vm.organization.location}}</span>
+            </li>
+            <li>
+                <i class="fa fa-link"></i>
+                <span><a ng-href="{{vm.organization.blog}}">{{vm.organization.blog}}</a></span>
+            </li>
+            <li>
+                <i class="fa fa-envelope"></i>
+                <span>{{vm.organization.email}}</span>
+            </li>
         </ul>
     </div>
     <div class="content">
-        <p class="section-title">Repositórios</p>
         <ul>
             <li ng-repeat="repository in vm.repositories" ng-click="vm.goToDetails(repository.name)">
                 <p class="name">{{repository.name}}</p>
