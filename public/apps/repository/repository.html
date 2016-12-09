@@ -1,0 +1,39 @@
+<div class="container repository">
+    <div class="header">
+        <h1>{{vm.repository.name}}</h1>
+        <h2>{{vm.repository.description}}</h2>
+        <ul>
+            <li>
+                <i class="octicon octicon-repo-forked"></i>
+                <span>{{vm.repository.forks_count}} forks</span>
+            </li>
+            <li>
+                <i class="octicon octicon-star"></i>
+                <span>{{vm.repository.stargazers_count}} stars</span>
+            </li>
+            <li>
+                <i class="octicon octicon-eye"></i>
+                <span>{{vm.repository.watchers_count}} watchers</span>
+            </li>
+            <li>
+                <i class="octicon octicon-issue-opened"></i>
+                <span>{{vm.repository.open_issues_count}} issues</span>
+            </li>
+            <li>
+                <i class="octicon octicon-issue-opened"></i>
+                <span>{{vm.contributors.length}} contributors</span>
+            </li>
+        </ul>
+        <div class="contributors">
+            <div class="contributor" ng-repeat="contributor in vm.contributors">
+                <a href="{{contributor.html_url}}" alt="{{contributor.login}}" title="{{contributor.login}}">
+                    <img ng-src="{{contributor.avatar_url}}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <canvas id="line" class="chart chart-line" chart-data="vm.commits.datas"
+        chart-labels="vm.commits.labels" chart-series="vm.commits.series"></canvas>
+    </div>
+</div>
