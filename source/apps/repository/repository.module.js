@@ -4,5 +4,6 @@
     angular
         .module('app.repository', [
             'app.utils'
+            , 'chart.js'
         ]);
 }());
