@@ -9,6 +9,8 @@
     "angular": "^1.5.9",
     "angular-ui-router": "^0.2.18",
     "reset-css": "^2.2.0",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "angular-chart.js": "^1.1.1",
+    "moment": "^2.17.1"
   }
 }
