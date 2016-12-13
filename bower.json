@@ -11,6 +11,7 @@
     "reset-css": "^2.2.0",
     "font-awesome": "^4.7.0",
     "angular-chart.js": "^1.1.1",
-    "moment": "^2.17.1"
+    "moment": "^2.17.1",
+    "chart.js": "^2.4.0"
   }
 }
