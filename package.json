@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Just a simple page with Mundipagg github stats",
   "scripts": {
-    "start": "bower install && grunt server"
+    "postinstall": "grunt build",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
