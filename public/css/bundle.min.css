@@ -2,6 +2,10 @@ body { width: 100%; height: 100%; font-family: Arial, sans-serif; background: #f
 
 .container { max-width: 960px; margin: 0 auto; position: relative; }
 
+@media (min-width: 740px) and (max-width: 1023px) { .container { max-width: 740px; } }
+
+@media (max-width: 739px) { .container { max-width: 480px; } }
+
 a { text-decoration: none; }
 
 a:hover { text-decoration: underline; }
@@ -15,6 +19,8 @@ a:hover { text-decoration: underline; }
 
 .home .header ul li { color: #546e7a; padding-right: 25px; box-sizing: border-box; display: inline-block; font-size: 14px; font-weight: 200; }
 
+@media (max-width: 739px) { .home .header ul li { display: block; margin-bottom: 15px; } }
+
 .home .header ul li:last-child { padding-right: 0; }
 
 .home .header ul li a { color: #546e7a; }
@@ -22,6 +28,12 @@ a:hover { text-decoration: underline; }
 .home .content { margin-top: 50px; }
 
 .home .content li { float: left; width: 30%; margin: 0 1.5% 20px; height: 90px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); box-sizing: border-box; padding: 15px; cursor: pointer; border: 1px solid #e9e9e9; overflow: hidden; transform: perspective(1px) translateZ(0); transition: transform 0.3s ease-out; }
+
+@media (min-width: 1400px) and (max-width: 2560px) { .home .content li { width: 22%; } }
+
+@media (min-width: 740px) and (max-width: 1023px) { .home .content li { width: 46%; } }
+
+@media (max-width: 739px) { .home .content li { float: none; width: 95%; } }
 
 .home .content li:hover { transform: translateY(-8px); }
 
@@ -34,11 +46,17 @@ a:hover { text-decoration: underline; }
 
 .repository .header h1 { display: block; overflow: hidden; font-size: 36px; line-height: 42px; text-align: center; margin: 50px 0 20px; color: #1565c0; }
 
+@media (max-width: 739px) { .repository .header h1 { font-size: 24px; line-height: 30px; } }
+
 .repository .header h2 { display: block; overflow: hidden; line-height: 28px; font-size: 24px; text-align: center; margin-bottom: 25px; }
+
+@media (max-width: 739px) { .repository .header h2 { font-size: 16px; line-height: 22px; } }
 
 .repository .header ul { text-align: center; height: auto; overflow: hidden; display: block; }
 
 .repository .header ul li { color: #546e7a; padding-right: 25px; box-sizing: border-box; display: inline-block; font-size: 14px; font-weight: 200; }
+
+@media (max-width: 739px) { .repository .header ul li { display: block; margin-bottom: 15px; padding-right: 0; } }
 
 .repository .header ul li:last-child { padding-right: 0; }
 
