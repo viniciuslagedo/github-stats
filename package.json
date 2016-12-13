@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Just a simple page with Mundipagg github stats",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "bower install && grunt server"
   },
   "author": "",
   "license": "ISC",
