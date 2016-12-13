@@ -1,3 +1,5 @@
+@import ../utils/variables
+
 body
     width: 100%
     height: 100%
@@ -8,6 +10,13 @@ body
     max-width: 960px
     margin: 0 auto
     position: relative
+
+    @media #{$tablet}
+        max-width: 740px
+
+    @media #{$mobile}
+        max-width: 480px
+
 
 a
     text-decoration: none

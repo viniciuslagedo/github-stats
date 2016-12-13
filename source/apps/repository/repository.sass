@@ -1,3 +1,5 @@
+@import ../utils/variables
+
 .repository
     .header
         position: relative
@@ -13,6 +15,10 @@
             text-align: center
             margin: 50px 0 20px
             color: rgba(21,101,192,1)
+            @media #{$mobile}
+                font-size: 24px
+                line-height: 30px
+
 
         h2
             display: block
@@ -21,6 +27,9 @@
             font-size: 24px
             text-align: center
             margin-bottom: 25px
+            @media #{$mobile}
+                font-size: 16px
+                line-height: 22px
 
         ul
             text-align: center
@@ -35,6 +44,10 @@
                 display: inline-block
                 font-size: 14px
                 font-weight: 200
+                @media #{$mobile}
+                    display: block
+                    margin-bottom: 15px
+                    padding-right: 0
 
                 &:last-child
                     padding-right: 0

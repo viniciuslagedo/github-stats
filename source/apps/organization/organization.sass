@@ -1,3 +1,5 @@
+@import ../utils/variables
+
 .home
     .header
         position: relative
@@ -14,6 +16,7 @@
             overflow: hidden
             display: block
             margin-top: -35px
+
             li
                 color: rgba(84,110,122,1)
                 padding-right: 25px
@@ -21,6 +24,10 @@
                 display: inline-block
                 font-size: 14px
                 font-weight: 200
+                @media #{$mobile}
+                    display: block
+                    margin-bottom: 15px
+
 
                 &:last-child
                     padding-right: 0
@@ -42,6 +49,14 @@
             overflow: hidden
             transform: perspective(1px) translateZ(0)
             transition: transform 0.3s ease-out
+            @media #{$huge}
+                width: 22%
+            @media #{$tablet}
+                width: 46%
+            @media #{$mobile}
+                float: none
+                width: 95%
+
 
             &:hover
                 transform: translateY(-8px)
